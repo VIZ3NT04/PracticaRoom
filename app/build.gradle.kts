@@ -40,12 +40,17 @@ android {
 }
 
 dependencies {
+    implementation(libs.androidx.preference.ktx)
     val roomVersion = "2.6.1"
     implementation("androidx.room:room-runtime:$roomVersion")
     ksp("androidx.room:room-compiler:$roomVersion")
 
     implementation("androidx.appcompat:appcompat:1.6.1")
     implementation("com.google.android.material:material:1.7.0")
+
+    implementation("com.squareup.retrofit2:retrofit:2.9.0")
+    implementation("com.squareup.retrofit2:converter-gson:2.9.0")
+    implementation("com.squareup.picasso:picasso:2.71828")
 
     implementation(libs.androidx.core.ktx)
     implementation(libs.androidx.appcompat)

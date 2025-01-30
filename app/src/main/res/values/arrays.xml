@@ -1,0 +1,21 @@
+<resources>
+    <!-- Opciones de idioma -->
+    <string-array name="languages">
+        <item>Español</item>
+        <item>Inglés</item>
+    </string-array>
+    <string-array name="language_values">
+        <item>es</item>
+        <item>en</item>
+    </string-array>
+
+    <!-- Orígenes de datos -->
+    <string-array name="data_sources">
+        <item>Base de datos local</item>
+        <item>Servicio web</item>
+    </string-array>
+    <string-array name="data_source_values">
+        <item>local</item>
+        <item>web</item>
+    </string-array>
+</resources>

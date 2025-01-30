@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <!-- Categoría 1: General -->
+    <PreferenceCategory
+        app:title="General"
+        app:icon="@android:drawable/ic_menu_preferences">
+
+        <!-- Idioma -->
+        <ListPreference
+            app:key="language_preference"
+            app:title="Lenguaje de la aplicación"
+            app:dialogTitle="Selecciona un idioma"
+            app:entries="@array/languages"
+            app:entryValues="@array/language_values"
+            app:defaultValue="es" />
+
+        <!-- Origen de datos -->
+        <ListPreference
+            app:key="data_source_preference"
+            app:title="Origen de datos"
+            app:dialogTitle="Selecciona el origen de datos"
+            app:entries="@array/data_sources"
+            app:entryValues="@array/data_source_values"
+            app:defaultValue="local" />
+    </PreferenceCategory>
+
+    <!-- Categoría 2: Multimedios -->
+    <PreferenceCategory
+        app:title="Multimedios"
+        app:icon="@android:drawable/ic_media_play">
+
+        <!-- Música -->
+        <SwitchPreferenceCompat
+            app:key="music_preference"
+            app:title="Reproducir música"
+            app:summary="Activa o desactiva la música de la aplicación"
+            app:defaultValue="true" />
+
+        <!-- Video de bienvenida -->
+        <SwitchPreferenceCompat
+            app:key="video_preference"
+            app:title="Reproducir video de bienvenida"
+            app:summary="Activa o desactiva el video de bienvenida"
+            app:defaultValue="true" />
+    </PreferenceCategory>
+
+    <!-- Categoría 3: Notificaciones -->
+    <PreferenceCategory
+        app:title="Notificaciones"
+        app:icon="@android:drawable/ic_notification_overlay">
+
+        <!-- Volumen de notificaciones -->
+        <SeekBarPreference
+            app:key="notification_volume"
+            app:title="Volumen de notificaciones"
+            app:showSeekBarValue="true"
+            app:defaultValue="50" />
+    </PreferenceCategory>
+
+</PreferenceScreen>
