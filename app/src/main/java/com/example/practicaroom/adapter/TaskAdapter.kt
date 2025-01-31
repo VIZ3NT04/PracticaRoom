@@ -1,11 +1,9 @@
 package com.example.practicaroom
 
 import android.content.Context
-import android.content.Intent
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
-import androidx.core.content.ContextCompat.startActivity
 import androidx.recyclerview.widget.RecyclerView
 import com.example.practicaroom.adapter.OnClickListener
 import com.example.practicaroom.databinding.ItemTaskBinding

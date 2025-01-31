@@ -27,9 +27,10 @@ class InsertForm : AppCompatActivity() {
 
         val task = intent.getSerializableExtra("task") as? TaskEntity
         if (task == null) {
+            binding.btnBorrar.visibility = View.INVISIBLE
+            binding.btnActualizar.visibility = View.INVISIBLE
             binding.btnInsert.setOnClickListener {
-                binding.btnBorrar.visibility = View.INVISIBLE
-                binding.btnActualizar.visibility = View.INVISIBLE
+
 
                 val title = binding.editTitle.text.toString()
                 val description = binding.editDescription.text.toString()
